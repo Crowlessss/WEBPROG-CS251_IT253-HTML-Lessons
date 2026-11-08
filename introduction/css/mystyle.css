@@ -1,1 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #1e3a8a;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+body > div {
+    background-color: white;
+    padding: 15px 25px 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 15px 0 25px;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+ul, ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 4px 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    display: inline-block;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+a:hover {
+    color: #172554;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #cbd5e1;
+    margin: 30px 0;
+}
+
+body > h2:last-of-type {
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
