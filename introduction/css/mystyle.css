@@ -45,6 +45,7 @@ body > div {
 }
 
 table {
+    border: 1;
     width: 100%;
     border-collapse: collapse;
     background-color: #1e293b;
