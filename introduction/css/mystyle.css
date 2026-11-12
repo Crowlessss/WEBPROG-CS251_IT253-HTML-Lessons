@@ -58,7 +58,7 @@ nav a {
     margin: 0;
     padding: 9px 16px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -90,12 +90,17 @@ p {
     margin-bottom: 15px;
 }
 
-body > div {
+body > div,
+.personal-info {
     background-color: #1e293b;
     padding: 15px 25px 25px;
     margin: 20px 0;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.personal-info table {
+    margin-top: 15px;
 }
 
 table {
@@ -123,6 +128,19 @@ tr:nth-child(even) {
     background-color: #263449;
 }
 
+.hobby-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.hobby-container section {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
 ul, ol {
     padding-left: 25px;
     margin-bottom: 20px;
@@ -132,17 +150,25 @@ li {
     padding: 4px 0;
 }
 
-img {
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-container img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    margin: 8px;
+    margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
-img:hover {
+.gallery-container img:hover {
     transform: scale(1.05);
 }
 
@@ -157,6 +183,16 @@ a {
 a:hover {
     color: #bfdbfe;
     text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 hr {
@@ -204,10 +240,18 @@ body > h2:last-of-type {
         font-size: 27px;
     }
 
-    img {
+    .hobby-container {
+        flex-direction: column;
+    }
+
+    .hobby-container section {
         width: 100%;
-        height: auto;
-        margin: 8px 0;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        max-width: 250px;
+        height: 200px;
     }
 
     table {
@@ -218,7 +262,8 @@ body > h2:last-of-type {
         padding: 9px;
     }
 
-    body > div {
+    body > div,
+    .personal-info {
         padding: 15px;
     }
 }
