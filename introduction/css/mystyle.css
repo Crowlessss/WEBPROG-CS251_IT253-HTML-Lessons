@@ -6,16 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: #0f172a;
+    color: #e2e8f0;
     line-height: 1.7;
     padding: 30px;
 }
 
 h1 {
     text-align: center;
-    background-color: #172554;
-    color: white;
+    background-color: #1e293b;
+    color: #60a5fa;
     padding: 14px;
     border-radius: 12px;
     margin-bottom: 25px;
@@ -23,12 +23,12 @@ h1 {
 }
 
 h2 {
-    color: #172554;
+    color: #60a5fa;
     margin-bottom: 15px;
 }
 
 h3 {
-    color: #1e3a8a;
+    color: #93c5fd;
     margin: 20px 0 10px;
 }
 
@@ -37,34 +37,35 @@ p {
 }
 
 body > div {
-    background-color: white;
+    background-color: #1e293b;
     padding: 15px 25px 25px;
     margin: 20px 0;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #1e293b;
     margin: 15px 0 25px;
 }
 
 th {
-    background-color: #172554;
-    color: white;
+    background-color: #334155;
+    color: #93c5fd;
     padding: 14px;
     text-align: left;
 }
 
 td {
     padding: 12px 14px;
-    border: 1px solid #ddd;
+    border: 1px solid #475569;
+    color: #e2e8f0;
 }
 
 tr:nth-child(even) {
-    background-color: #f1f5f9;
+    background-color: #263449;
 }
 
 ul, ol {
@@ -82,7 +83,7 @@ img {
     object-fit: cover;
     border-radius: 12px;
     margin: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -92,28 +93,28 @@ img:hover {
 
 a {
     display: inline-block;
-    color: #1d4ed8;
+    color: #60a5fa;
     text-decoration: none;
     font-weight: bold;
     margin: 5px 0;
 }
 
 a:hover {
-    color: #172554;
+    color: #bfdbfe;
     text-decoration: underline;
 }
 
 hr {
     border: none;
     height: 2px;
-    background-color: #cbd5e1;
+    background-color: #475569;
     margin: 30px 0;
 }
 
 body > h2:last-of-type {
     text-align: center;
-    background-color: #172554;
-    color: white;
+    background-color: #1e293b;
+    color: #60a5fa;
     padding: 25px;
     border-radius: 12px;
     margin-top: 25px;
